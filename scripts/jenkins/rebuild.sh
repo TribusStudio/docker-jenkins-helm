@@ -20,8 +20,8 @@ sleep 90
 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
   root@"$IP" "mkdir -p docker-jenkins-helm-job"
 scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
-  ~/.dcycle-docker-credentials.sh \
-  root@$IP:~/.dcycle-docker-credentials.sh
+  ~/.tribus-docker-credentials.sh \
+  root@$IP:~/.tribus-docker-credentials.sh
 scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
   -r * root@"$IP":docker-jenkins-helm-job
 ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
